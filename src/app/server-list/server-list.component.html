@@ -2,6 +2,9 @@
   {{ this.errorMessage }}
 </div>
 
+<h2>All servers linked on IRCnet</h2>
+<br>
+
 <ng-container *ngIf="data.countriesWithServers">
   <div *ngFor="let country of data.countriesWithServers; let i = index">
     <br *ngIf="i != 0">

@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ircnet.info';
+  title = '#Tools @ IRCnet - by doni (doni@irc.it)';
 
   constructor(private router: Router) {
   }

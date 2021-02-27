@@ -1,19 +1,25 @@
-<h2>Welcome to ircnet.info!</h2>
-<br/>
-<p>This website offers the following services:</p>
-<ul>
-  <li><a [routerLink]="['/servers']">Server List</a> - lists all servers (updated every 10 seconds)</li>
-  <li><a [routerLink]="['/channels']">Channel List</a> - lists all public channels (live data)</li>
-  <li><a [routerLink]="['/i-line']">I-Line Lookup</a> - checks which servers you can connect to</li>
-</ul>
+<h2>Welcome</h2>
 
-<br>
-<br>
-<br>
-
-<h4>IRCnet App (beta)</h4>
-<a href="https://play.google.com/store/apps/details?id=com.ircnet.proxy.client.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-  <img
-    alt="Get it on Google Play"
-    style="width: 240px;"
-    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
+<p><strong>#Tools</strong> is a channel on IRCnet where you can get information about IRCnet and IP addresses.</p>
+<p>
+  <strong>How does it work?</strong> <br/>
+  Type on channel the command of the desired service.<br/><br/>
+  <strong>What are the commands and services available?</strong><br/>
+  !iline &lt;none/nick/host&gt; = Shows IRCnet server I-lines<br/>
+  !server &lt;tld/sid/open&gt; = Shows linked servers<br/>
+  !spoof &lt;none&gt; = Shows servers available for cloaked connection (Spoof)<br/>
+  !ipv6 &lt;tld/open&gt; = Shows IPv6 servers<br/>
+  !dns/!ip/!whois &lt;ip/host&gt; = Resolves IPv4/6 and shows whois<br/>
+  !ping6 &lt;ipv6/host&gt; = Pinging IPv6 address<br/>
+  !splits &lt;none&gt; = Shows the current server splits (alert enabled on channel)<br/>
+    !kills &lt;none&gt; = Shows the last 3 kills from IRCops (alert enabled on channel)<br/>
+      !collide &lt;nick&gt; = Shows the last 3 nick collisions<br/>
+        !seen &lt;nick&gt; = Shows the last seen of a nick<br/>
+          !ircop &lt;server&gt; = Shows online IRCops<br/>
+            !uptime &lt;server&gt; = Shows server uptime<br/>
+              !chinfo &lt;chan&gt; = Shows channel modes and topic<br/>
+                !reop &lt;chan&gt; = Shows channel reop list<br/>
+                  !invite &lt;chan&gt; = Shows channel invite list<br/>
+                    !ban &lt;chan&gt; = Shows channel ban list  <br/><br/>
+  Please don't abuse it.
+</p>

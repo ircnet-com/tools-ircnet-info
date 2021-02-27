@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <span class="navbar-brand">ircnet.info</span>
+  <span class="navbar-brand">#Tools</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a [routerLink]="['/']" class="nav-link " [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a [routerLink]="['/']" class="nav-link "[routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a>
       </li>
       <li class="nav-item">
         <a [routerLink]="['/servers']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Servers</a>
       </li>
       <li class="nav-item">
-        <a [routerLink]="['/i-line']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">I-Line Lookup</a>
+        <a [routerLink]="['/i-line']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">I-Lines</a>
       </li>
       <li class="nav-item">
         <a [routerLink]="['/channels']" class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Channels</a>
@@ -25,3 +25,7 @@
 <div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="footer-copyright text-center py-3">&copy; 2019 #Tools @ IRCnet - by doni (doni@irc.it)</div>
+</footer>
