@@ -1,4 +1,4 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import {IlineLookupComponent} from './iline-lookup.component';
 
@@ -6,7 +6,7 @@ describe('IlineLookupComponent', () => {
   let component: IlineLookupComponent;
   let fixture: ComponentFixture<IlineLookupComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ IlineLookupComponent ]
     })

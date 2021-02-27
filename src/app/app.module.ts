@@ -25,11 +25,11 @@ import {ChannelListComponent} from './channel-list/channel-list.component';
     HttpClientModule,
     DataTablesModule,
     RouterModule.forRoot([
-      { path: 'servers', component: ServerListComponent },
-      { path: 'i-line', component: IlineLookupComponent },
-      { path: 'channels', component: ChannelListComponent },
-      { path: '', component: HomeComponent }
-    ])
+    { path: 'servers', component: ServerListComponent },
+    { path: 'i-line', component: IlineLookupComponent },
+    { path: 'channels', component: ChannelListComponent },
+    { path: '', component: HomeComponent }
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
   bootstrap: [AppComponent]

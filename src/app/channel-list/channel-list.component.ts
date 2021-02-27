@@ -25,10 +25,10 @@ class DataTablesResponse {
   styleUrls: ['./channel-list.component.css']
 })
 export class ChannelListComponent implements OnInit, AfterViewInit {
-  @ViewChild(DataTableDirective, {static: false})
+  @ViewChild(DataTableDirective)
   datatableElement: DataTableDirective;
 
-  @ViewChild('searchTermInput', {static: false})
+  @ViewChild('searchTermInput')
   searchTermInput: ElementRef;
 
   dtOptions: DataTables.Settings = {};
