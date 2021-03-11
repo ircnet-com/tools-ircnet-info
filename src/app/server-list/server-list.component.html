@@ -3,8 +3,11 @@
 </div>
 
 <h2>All servers linked on IRCnet</h2>
-<br>
 
+<i>
+    <small>Total global users: {{data.totalUsers}} - Last server map received: {{data.lastMapReceived  | date:'dd.MM.yyyy HH:mm:ss'}}</small>
+  </i>
+<br><br>
 <ng-container *ngIf="data.countriesWithServers">
   <div *ngFor="let country of data.countriesWithServers; let i = index">
     <br *ngIf="i != 0">
@@ -49,10 +52,4 @@
 
   <br/>
 
-  <i>
-    <small>Total global users: {{data.totalUsers}}</small>
-    <br>
-    <small>Last server map received: {{data.lastMapReceived  | date:'dd.MM.yyyy HH:mm:ss'}}</small>
-  </i>
-  <br><br>
 </ng-container>
