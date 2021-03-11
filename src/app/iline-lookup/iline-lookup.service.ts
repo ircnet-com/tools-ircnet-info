@@ -10,7 +10,7 @@ import {AppSettings} from '../app.settings';
   providedIn: 'root'
 })
 export class IlineLookupService {
-  private url = AppSettings.INFOBOT_API_URL + '/i-line?q=';
+  private url = window.location.protocol + AppSettings.INFOBOT_API_URL + '/i-line?q=';
 
   constructor(private httpClient: HttpClient) {
   }
