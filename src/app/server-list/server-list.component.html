@@ -7,15 +7,17 @@
 <i>
     <small>Total global users: {{data.totalUsers}} - Last server map received: {{data.lastMapReceived  | date:'dd.MM.yyyy HH:mm:ss'}}</small>
   </i>
-<br><br>
+  
+<br>
+<br>
 <ng-container *ngIf="data.countriesWithServers">
   <div *ngFor="let country of data.countriesWithServers; let i = index">
     <br *ngIf="i != 0">
-    <h2>{{ country.countryName }}</h2>
+    <h4>{{ country.countryName }}</h4>
     <p>Total users: {{ country.totalUsers }}</p>
 
     <div class="table-responsive">
-      <table class="table table-striped">
+      <table class="table table-bordered table table-striped">
         <thead>
         <tr>
           <th scope="col" style="width: 20%;">Name</th>
