@@ -34,7 +34,7 @@
       <tr *ngFor="let channel of channels">
         <td>{{ channel.name }}</td>
         <td>{{ channel.userCount }}</td>
-        <td>{{ channel.topic }}</td>
+        <td>{{ channel.topic | removeColors }}</td>
       </tr>
       </tbody>
       <tbody *ngIf="channels?.length == 0">

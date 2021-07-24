@@ -12,6 +12,7 @@ import {HomeComponent} from './home/home.component';
 import {ChannelListComponent} from './channel-list/channel-list.component';
 import { OrderBySIDPipe } from './iline-lookup/order-by-sid.pipe';
 import { CorrectServerDescriptionEncodingPipe } from './correct-server-name-encoding.pipe';
+import { RemoveColorsPipe } from './remove-colors.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CorrectServerDescriptionEncodingPipe } from './correct-server-name-enco
     IlineLookupComponent,
     ChannelListComponent,
     OrderBySIDPipe,
-    CorrectServerDescriptionEncodingPipe
+    CorrectServerDescriptionEncodingPipe,
+    RemoveColorsPipe
   ],
   imports: [
     BrowserModule,
