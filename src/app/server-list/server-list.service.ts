@@ -1,4 +1,4 @@
-/* tslint:disable:one-line */
+/* tslint:disable:one-line whitespace triple-equals */
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {ServerList} from './server-list';

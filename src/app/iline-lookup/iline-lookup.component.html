@@ -34,9 +34,9 @@
     </thead>
 
     <tbody>
-    <tr *ngFor="let server of this.response.response">
+    <tr *ngFor="let server of this.response.response | orderBySID">
       <td>{{ server.serverName }}</td>
-      <td>{{ server.serverInfo }}</td>
+      <td>{{ server.serverInfo | correctServerDescriptionEncoding}}</td>
     </tr>
     </tbody>
   </table>

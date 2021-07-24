@@ -10,6 +10,8 @@ import {IlineLookupComponent} from './iline-lookup/iline-lookup.component';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {ChannelListComponent} from './channel-list/channel-list.component';
+import { OrderBySIDPipe } from './iline-lookup/order-by-sid.pipe';
+import { CorrectServerDescriptionEncodingPipe } from './correct-server-name-encoding.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {ChannelListComponent} from './channel-list/channel-list.component';
     HomeComponent,
     ServerListComponent,
     IlineLookupComponent,
-    ChannelListComponent
+    ChannelListComponent,
+    OrderBySIDPipe,
+    CorrectServerDescriptionEncodingPipe
   ],
   imports: [
     BrowserModule,

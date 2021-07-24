@@ -2,22 +2,14 @@
   {{ this.errorMessage }}
 </div>
 
-<h2>All servers linked on IRCnet</h2>
-
-<i *ngIf="data.countriesWithServers">
-    <small>Total global users: {{data.totalUsers}} - Last server map received: {{getFormattedDateDifference(data.lastMapReceived)}} ago</small>
-  </i>
-
-<br>
-<br>
 <ng-container *ngIf="data.countriesWithServers">
   <div *ngFor="let country of data.countriesWithServers; let i = index">
     <br *ngIf="i != 0">
-    <h4>{{ country.countryName }}</h4>
+    <h2>{{ country.countryName }}</h2>
     <p>Total users: {{ country.totalUsers }}</p>
 
     <div class="table-responsive">
-      <table class="table table-bordered table table-striped">
+      <table class="table table-striped">
         <thead>
         <tr>
           <th scope="col" style="width: 20%;">Name</th>
@@ -54,4 +46,10 @@
 
   <br/>
 
+  <i>
+    <small>Total global users: {{data.totalUsers}}</small>
+    <br>
+    <small>Last server map received: {{getFormattedDateDifference(data.lastMapReceived)}} ago</small>
+  </i>
+  <br><br>
 </ng-container>
