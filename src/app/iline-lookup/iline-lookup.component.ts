@@ -49,7 +49,7 @@ export class IlineLookupComponent implements OnInit {
   }
 
   getIpAddress() {
-    this.http.get(window.location.protocol + AppSettings.INFOBOT_API_URL + '/ipaddress')
+    this.http.get(AppSettings.INFOBOT_API_URL + '/ipaddress')
       .subscribe((data: any) => {
         this.ilineForm.address = data.address;
       });

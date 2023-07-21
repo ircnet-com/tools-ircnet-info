@@ -10,7 +10,7 @@ import {AppSettings} from '../app.settings';
   providedIn: 'root'
 })
 export class ServerListService {
-  private url = window.location.protocol + AppSettings.INFOBOT_API_URL + '/serversByCountry';
+  private url = AppSettings.INFOBOT_API_URL + '/serversByCountry';
 
   constructor(private http: HttpClient) {
   }
