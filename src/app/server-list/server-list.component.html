@@ -2,7 +2,7 @@
   {{ this.errorMessage }}
 </div>
 
-<h2>All servers linked on IRCnet</h2>
+<h2 *ngIf="!embed">All servers linked on IRCnet</h2>
 
 <i *ngIf="data.countriesWithServers">
     <small>Total global users: {{data.totalUsers}} - Total servers: {{data.totalServers}} - Last server map received: {{getFormattedDateDifference(data.lastMapReceived)}} ago</small>

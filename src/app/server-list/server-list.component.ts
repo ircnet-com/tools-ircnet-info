@@ -1,6 +1,7 @@
 /* tslint:disable:one-line */
 import {Component, OnInit} from '@angular/core';
 import {ServerListService} from './server-list.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-server-list',
@@ -11,8 +12,9 @@ import {ServerListService} from './server-list.service';
 export class ServerListComponent implements OnInit {
   data: any;
   errorMessage: string;
+  embed: boolean;
 
-  constructor(private serverListService: ServerListService  ) {
+  constructor(private serverListService: ServerListService, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
@@ -21,6 +23,10 @@ export class ServerListComponent implements OnInit {
         this.data = data;
       },
       error: err => this.errorMessage = err
+    });
+
+    this.route.queryParams.subscribe(params => {
+      this.embed = params["embed"] === 'true';
     });
   }
 
