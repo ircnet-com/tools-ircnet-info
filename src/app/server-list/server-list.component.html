@@ -5,8 +5,8 @@
 <h2 *ngIf="!embed">All servers linked on IRCnet</h2>
 
 <i *ngIf="data.countriesWithServers">
-    <small>Total global users: {{data.totalUsers}} - Total servers: {{data.totalServers}} - Last server map received: {{getFormattedDateDifference(data.lastMapReceived)}} ago</small>
-  </i>
+    <small>Total global users: {{data.totalUsers}} - Total servers: {{data.totalServers}}</small>
+</i>
 
 <br>
 <br>
@@ -55,3 +55,7 @@
   <br/>
 
 </ng-container>
+
+<i *ngIf="data.countriesWithServers">
+  <small>Last server map received: {{getFormattedDateDifference(data.lastMapReceived)}} ago</small>
+</i>

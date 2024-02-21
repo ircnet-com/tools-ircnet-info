@@ -5,6 +5,7 @@ import {IlineLookupService} from './iline-lookup.service';
 import {IlineLookupResponse} from './iline-lookup-response';
 import {HttpClient} from '@angular/common/http';
 import {AppSettings} from '../app.settings';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-iline-lookup',
@@ -16,14 +17,19 @@ export class IlineLookupComponent implements OnInit {
   response: IlineLookupResponse;
   errorMessage: string;
   loading: boolean;
+  embed: boolean;
 
-  constructor(private ilineLookupService: IlineLookupService, private http: HttpClient) {
+  constructor(private ilineLookupService: IlineLookupService, private http: HttpClient, private route: ActivatedRoute) {
     this.ilineForm = {
       address: ''
     };
   }
 
   ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.embed = params["embed"] === 'true';
+    });
+
     this.getIpAddress();
   }
 

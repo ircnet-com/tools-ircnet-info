@@ -3,7 +3,7 @@
 </div>
 
 
-<h2>I-Line Lookup Service</h2><br>
+<h2 *ngIf="!embed">I-Line Lookup Service</h2><br>
 <form #form="ngForm" (ngSubmit)="onSubmit(form)">
   <div class="form-group row col-lg-5">
     <label for="address">IP Address</label>
