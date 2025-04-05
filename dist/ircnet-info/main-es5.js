@@ -31,7 +31,7 @@
       };
 
       AppSettings.CLIS_URL = 'https://clis.ircnet.com/';
-      AppSettings.INFOBOT_API_URL = 'https://bot.ircnet.info/api';
+      AppSettings.INFOBOT_API_URL = 'https://bot-ca.ircnet.info/api';
       /***/
     },
 
