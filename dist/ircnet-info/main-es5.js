@@ -15,7 +15,7 @@
     /*! exports provided: AppSettings */
 
     /***/
-    function RaO(module, __webpack_exports__, __webpack_require__) {
+    function _RaO(module, __webpack_exports__, __webpack_require__) {
       "use strict";
 
       __webpack_require__.r(__webpack_exports__);
@@ -26,12 +26,12 @@
         return AppSettings;
       });
 
-      var AppSettings = function AppSettings() {
+      var AppSettings = /*#__PURE__*/_createClass(function AppSettings() {
         _classCallCheck(this, AppSettings);
-      };
+      });
 
       AppSettings.CLIS_URL = 'https://clis.ircnet.com/';
-      AppSettings.INFOBOT_API_URL = 'https://bot-ca.ircnet.info/api';
+      AppSettings.INFOBOT_API_URL = 'https://bot.ircnet.info/api';
       /***/
     },
 
@@ -67,7 +67,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzZXJ2ZXItbGlzdC5jb21wb25lbnQuY3NzIn0= */";
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NlcnZlci1saXN0L3NlcnZlci1saXN0LmNvbXBvbmVudC5jc3MifQ== */";
       /***/
     },
 
@@ -147,13 +147,13 @@
       /* tslint:disable:triple-equals one-line */
 
 
-      var Channel = function Channel() {
+      var Channel = /*#__PURE__*/_createClass(function Channel() {
         _classCallCheck(this, Channel);
-      };
+      });
 
-      var DataTablesResponse = function DataTablesResponse() {
+      var DataTablesResponse = /*#__PURE__*/_createClass(function DataTablesResponse() {
         _classCallCheck(this, DataTablesResponse);
-      };
+      });
 
       var ChannelListComponent = /*#__PURE__*/function () {
         function ChannelListComponent(http) {
@@ -168,7 +168,7 @@
           this.searchTerm = '';
         }
 
-        _createClass(ChannelListComponent, [{
+        return _createClass(ChannelListComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
             var _this = this;
@@ -237,8 +237,6 @@
             });
           }
         }]);
-
-        return ChannelListComponent;
       }();
 
       ChannelListComponent.ctorParameters = function () {
@@ -314,12 +312,10 @@
           _classCallCheck(this, HomeComponent);
         }
 
-        _createClass(HomeComponent, [{
+        return _createClass(HomeComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {}
         }]);
-
-        return HomeComponent;
       }();
 
       HomeComponent.ctorParameters = function () {
@@ -350,7 +346,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */";
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */";
       /***/
     },
 
@@ -429,7 +425,7 @@
           _classCallCheck(this, CorrectServerDescriptionEncodingPipe);
         }
 
-        _createClass(CorrectServerDescriptionEncodingPipe, [{
+        return _createClass(CorrectServerDescriptionEncodingPipe, [{
           key: "transform",
           value: function transform(value) {
             if (value == null) {
@@ -445,8 +441,6 @@
             return value;
           }
         }]);
-
-        return CorrectServerDescriptionEncodingPipe;
       }();
 
       CorrectServerDescriptionEncodingPipe = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
@@ -559,7 +553,7 @@
           this.url = _app_settings__WEBPACK_IMPORTED_MODULE_5__["AppSettings"].INFOBOT_API_URL + '/i-line?q=';
         }
 
-        _createClass(IlineLookupService, [{
+        return _createClass(IlineLookupService, [{
           key: "getServerList",
           value: function getServerList(ilineForm) {
             return this.httpClient.get(this.url + ilineForm.address).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError));
@@ -574,8 +568,6 @@
             }
           }
         }]);
-
-        return IlineLookupService;
       }();
 
       IlineLookupService.ctorParameters = function () {
@@ -627,7 +619,7 @@
           _classCallCheck(this, OrderBySIDPipe);
         }
 
-        _createClass(OrderBySIDPipe, [{
+        return _createClass(OrderBySIDPipe, [{
           key: "transform",
           value: function transform(items) {
             return items.sort(function (a, b) {
@@ -643,8 +635,6 @@
             });
           }
         }]);
-
-        return OrderBySIDPipe;
       }();
 
       OrderBySIDPipe = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
@@ -669,7 +659,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJob21lLmNvbXBvbmVudC5jc3MifQ== */";
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */";
       /***/
     },
 
@@ -731,7 +721,7 @@
           this.title = '#Tools @ IRCnet - by doni (doni@irc.it)';
         }
 
-        _createClass(AppComponent, [{
+        return _createClass(AppComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
             var _this3 = this;
@@ -741,8 +731,6 @@
             });
           }
         }]);
-
-        return AppComponent;
       }();
 
       AppComponent.ctorParameters = function () {
@@ -825,7 +813,7 @@
           this.url = _app_settings__WEBPACK_IMPORTED_MODULE_5__["AppSettings"].INFOBOT_API_URL + '/serversByCountry';
         }
 
-        _createClass(ServerListService, [{
+        return _createClass(ServerListService, [{
           key: "getServerList",
           value: function getServerList() {
             return this.http.get(this.url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError));
@@ -840,8 +828,6 @@
             }
           }
         }]);
-
-        return ServerListService;
       }();
 
       ServerListService.ctorParameters = function () {
@@ -986,9 +972,9 @@
       /*! ./remove-colors.pipe */
       "dcU5");
 
-      var AppModule = function AppModule() {
+      var AppModule = /*#__PURE__*/_createClass(function AppModule() {
         _classCallCheck(this, AppModule);
-      };
+      });
 
       AppModule.ctorParameters = function () {
         return [];
@@ -1097,7 +1083,7 @@
           };
         }
 
-        _createClass(IlineLookupComponent, [{
+        return _createClass(IlineLookupComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
             var _this4 = this;
@@ -1140,8 +1126,6 @@
             });
           }
         }]);
-
-        return IlineLookupComponent;
       }();
 
       IlineLookupComponent.ctorParameters = function () {
@@ -1199,7 +1183,7 @@
           _classCallCheck(this, RemoveColorsPipe);
         }
 
-        _createClass(RemoveColorsPipe, [{
+        return _createClass(RemoveColorsPipe, [{
           key: "transform",
           value: function transform(text) {
             if (!text || text.length === 0) {
@@ -1271,8 +1255,6 @@
             return !isNaN(arg);
           }
         }]);
-
-        return RemoveColorsPipe;
       }();
 
       RemoveColorsPipe = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
@@ -1317,7 +1299,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJpbGluZS1sb29rdXAuY29tcG9uZW50LmNzcyJ9 */";
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2lsaW5lLWxvb2t1cC9pbGluZS1sb29rdXAuY29tcG9uZW50LmNzcyJ9 */";
       /***/
     },
 
@@ -1387,7 +1369,7 @@
           this.route = route;
         }
 
-        _createClass(ServerListComponent, [{
+        return _createClass(ServerListComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {
             var _this7 = this;
@@ -1462,8 +1444,6 @@
             }
           }
         }]);
-
-        return ServerListComponent;
       }();
 
       ServerListComponent.ctorParameters = function () {
@@ -1518,7 +1498,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = ".no-data-available {\r\n  text-align: center;\r\n}\r\n\r\n.sorting, .sorting_asc, .sorting_asc {\r\n  background-position: center left !important;\r\n}\r\n\r\ntable.dataTable thead .sorting,\r\ntable.dataTable thead .sorting_asc,\r\ntable.dataTable thead .sorting_desc,\r\ntable.dataTable thead .sorting_asc_disabled,\r\ntable.dataTable thead .sorting_desc_disabled {\r\n  background-position: center left;\r\n  padding-left: 1.5em;\r\n}\r\n\r\ntable.dataTable thead th, table.dataTable thead td {\r\n  padding: 10px 8px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNoYW5uZWwtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsMkNBQTJDO0FBQzdDOztBQUVBOzs7OztFQUtFLGdDQUFnQztFQUNoQyxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkIiLCJmaWxlIjoiY2hhbm5lbC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubm8tZGF0YS1hdmFpbGFibGUge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLnNvcnRpbmcsIC5zb3J0aW5nX2FzYywgLnNvcnRpbmdfYXNjIHtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgbGVmdCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmcsXHJcbnRhYmxlLmRhdGFUYWJsZSB0aGVhZCAuc29ydGluZ19hc2MsXHJcbnRhYmxlLmRhdGFUYWJsZSB0aGVhZCAuc29ydGluZ19kZXNjLFxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmdfYXNjX2Rpc2FibGVkLFxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmdfZGVzY19kaXNhYmxlZCB7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGxlZnQ7XHJcbiAgcGFkZGluZy1sZWZ0OiAxLjVlbTtcclxufVxyXG5cclxudGFibGUuZGF0YVRhYmxlIHRoZWFkIHRoLCB0YWJsZS5kYXRhVGFibGUgdGhlYWQgdGQge1xyXG4gIHBhZGRpbmc6IDEwcHggOHB4O1xyXG59XHJcblxyXG4iXX0= */";
+      __webpack_exports__["default"] = ".no-data-available {\r\n  text-align: center;\r\n}\r\n\r\n.sorting, .sorting_asc, .sorting_asc {\r\n  background-position: center left !important;\r\n}\r\n\r\ntable.dataTable thead .sorting,\r\ntable.dataTable thead .sorting_asc,\r\ntable.dataTable thead .sorting_desc,\r\ntable.dataTable thead .sorting_asc_disabled,\r\ntable.dataTable thead .sorting_desc_disabled {\r\n  background-position: center left;\r\n  padding-left: 1.5em;\r\n}\r\n\r\ntable.dataTable thead th, table.dataTable thead td {\r\n  padding: 10px 8px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hhbm5lbC1saXN0L2NoYW5uZWwtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsMkNBQTJDO0FBQzdDOztBQUVBOzs7OztFQUtFLGdDQUFnQztFQUNoQyxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9jaGFubmVsLWxpc3QvY2hhbm5lbC1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubm8tZGF0YS1hdmFpbGFibGUge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLnNvcnRpbmcsIC5zb3J0aW5nX2FzYywgLnNvcnRpbmdfYXNjIHtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgbGVmdCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmcsXHJcbnRhYmxlLmRhdGFUYWJsZSB0aGVhZCAuc29ydGluZ19hc2MsXHJcbnRhYmxlLmRhdGFUYWJsZSB0aGVhZCAuc29ydGluZ19kZXNjLFxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmdfYXNjX2Rpc2FibGVkLFxyXG50YWJsZS5kYXRhVGFibGUgdGhlYWQgLnNvcnRpbmdfZGVzY19kaXNhYmxlZCB7XHJcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGxlZnQ7XHJcbiAgcGFkZGluZy1sZWZ0OiAxLjVlbTtcclxufVxyXG5cclxudGFibGUuZGF0YVRhYmxlIHRoZWFkIHRoLCB0YWJsZS5kYXRhVGFibGUgdGhlYWQgdGQge1xyXG4gIHBhZGRpbmc6IDEwcHggOHB4O1xyXG59XHJcblxyXG4iXX0= */";
       /***/
     },
 
