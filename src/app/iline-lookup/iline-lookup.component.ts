@@ -21,7 +21,7 @@ import {ActivatedRoute} from '@angular/router';
     NgForOf
   ],
   templateUrl: './iline-lookup.component.html',
-  styleUrl: './iline-lookup.component.css'
+  styleUrl: './iline-lookup.component.scss'
 })
 export class IlineLookupComponent implements OnInit {
   ilineForm: IlineForm;

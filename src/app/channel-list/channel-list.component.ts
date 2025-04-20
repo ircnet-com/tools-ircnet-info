@@ -27,7 +27,7 @@ class DataTablesResponse {
     DataTablesModule
   ],
   templateUrl: './channel-list.component.html',
-  styleUrl: './channel-list.component.css'
+  styleUrl: './channel-list.component.scss'
 })
 export class ChannelListComponent implements OnInit, AfterViewInit {
   @ViewChild(DataTableDirective)

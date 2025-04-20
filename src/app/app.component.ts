@@ -7,7 +7,7 @@ import {NgIf} from "@angular/common";
   standalone: true,
   imports: [RouterOutlet, RouterLink, RouterLinkActive, NgIf],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   title = '#Tools @ IRCnet - by doni (doni@irc.it)';

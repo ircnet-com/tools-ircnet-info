@@ -13,7 +13,7 @@ import {ActivatedRoute} from '@angular/router';
     NgForOf
   ],
   templateUrl: './server-list.component.html',
-  styleUrl: './server-list.component.css'
+  styleUrl: './server-list.component.scss'
 })
 export class ServerListComponent implements OnInit {
   data: any;
