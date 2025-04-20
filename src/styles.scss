@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Change bootstrap colors */
+$success-bg-subtle: #d4edda;
+$success-border-subtle: #c3e6cb;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 .container-fluid {
   padding-right: 1.5em;
   padding-left: 1.5em;
@@ -59,8 +66,3 @@ body {
   padding: 0;
 }
 
-/* Change bootstrap colors */
-$success-bg-subtle: #d4edda;
-$success-border-subtle: #c3e6cb;
-
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
